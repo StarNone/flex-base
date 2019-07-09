@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one,.two{
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .container .box{
+            width: 400px;
+            height: 400px;
+            border-radius: 60px;
+            border: 1px solid #000;
+        }
+        .point {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: #f00;
+        }
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box3 {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            box-sizing: border-box;
+        }
+        .box3 .point:nth-child(1){
+            align-self:flex-end;
+        }
+        .box3 .point:nth-child(2) {
+            align-self: center;
+        }
+        .box3 .point:nth-child(3) {
+            align-self: flex-start;
+        }
+        .box4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .first,.second{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .box5 {
+            display: flex;
+            padding:  0 20px;
+            box-sizing: border-box;
+        }
+        .box5 div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0px auto;
+        }
+        .box6 {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <div class="box box1">
+            <div class="point"></div>
+            </div>
+            <div class="box box2">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="box box3">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="box box4">
+                <div class="first">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+                <div class="second">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+            <div class="box box5">
+                <div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+                <div>
+                    <div class="point"></div>
+                </div>
+                <div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="first">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+                <div class="second">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
